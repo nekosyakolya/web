@@ -1,0 +1,395 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+
+.clearfix:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body
+{
+    width: 100%;
+    margin: auto;
+    font-family: Arial,sans-serif;
+    font-size: 13px;
+}
+
+.header
+{
+    background: #fff;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.14);
+}
+
+.container
+{
+    width: 1320px;
+    margin: auto;
+    padding: 21px 18px 18px 28px;
+}
+
+.header .logo
+{
+    padding: 0;
+    margin: 0 7px 0 0;
+    float: left;
+}
+
+
+img
+{
+    min-width: 100%;
+    height: auto;
+}
+
+.main-container
+{
+    background: #f6f5f3;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.house-roof
+{
+    background: url("../img/roof.png") no-repeat;
+    height: 50px;
+}
+
+.house-roof .logo
+{
+    background: url("../img/logo.png") no-repeat;
+    height: 71px;
+    width: 36px;
+    position: relative;
+    margin: 0 auto;
+    top: 26px;
+    left: -10px;
+}
+
+.content
+{
+    margin: 0 auto;
+    padding: 49px 0 110px 0;
+    text-align: center;
+    width: 300px;
+}
+
+.house-body
+{
+    background: linear-gradient(to bottom, #e6eeff, #dde8ff);
+    padding: 60px 20px 7px 20px;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    border-color: #000 #c9d2e5 #c9d2e5;
+    text-align: left;
+}
+
+.house-form .block
+{
+    font-size: 15px;
+}
+
+.house-input
+{
+    line-height: 20px;
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 1px 1px rgba(0,0,0,.1);
+    font-family: Arial,Helvetica,sans-serif;
+    display: block;
+    width: 236px;
+    border-top: 1px solid #8d939e;
+    border-right: 1px solid #a6acba;
+    border-bottom: 1px solid #c1c8d8;
+    border-left: 1px solid #a6acba;
+    border-radius: 1px;
+    font-size: 15px;
+}
+
+
+.house-input:focus,
+.house-form .button-submit:focus,
+.house-form .button:focus,
+.block .control:focus
+{
+    box-shadow: 0 0 5px #ffcd07, 0 0 12px #ffcd07;
+}
+
+
+.house-form
+{
+    padding-bottom: 7px;
+}
+
+.house-form .block-enter
+{
+    margin: 0 0 10px 0;
+}
+
+.house-form .button-submit
+{
+    text-align: center;
+    padding: 6px 15px 7px 15px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.07);
+    font-size: 15px;
+    display: block;
+    float: left;
+    width: 220px;
+    background: linear-gradient(to bottom, #ffdf5f, #ffcc01);
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #8e8676;
+    cursor: pointer;
+}
+
+
+.house-form .button-submit:hover,
+.house-form .button:hover
+{
+    background: linear-gradient(to bottom, #ffe680, #ffd42a);
+}
+
+.house-form .button
+{
+    background: linear-gradient(to bottom, #ffdf5f, #ffcc01);
+    text-align: center;
+    padding: 8px 10px 3px 11px;
+    border-radius: 0 3px 3px 0;
+    border-right: 1px solid #8e8676;
+    border-top: 1px solid #8e8676;
+    border-bottom: 1px solid #8e8676;
+    box-shadow: 0 1px 0 rgba(0,0,0,.07);
+    display: block;
+    float: left;
+}
+
+.block .control
+{
+    border-radius: 3px;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 2px 4px 0;
+    vertical-align: middle;
+    box-shadow: 0 1px 0 rgba(0,0,0,.07);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+
+.block
+{
+    cursor: pointer;
+}
+
+.list
+{
+    overflow: hidden;
+    list-style: none;
+}
+
+
+
+.list-facebook
+{
+    background-position: -24px 0;
+    opacity: 0.3;
+}
+
+
+.list-facebook:hover
+{
+    background-position: -24px -24px;
+    opacity: 1;
+}
+
+.list-twitter
+{
+    background-position: -48px 0;
+    opacity: 0.3;
+}
+
+.list-twitter:hover
+{
+    background-position: -48px -24px;
+    opacity: 1;
+}
+
+.list-vkontakte
+{
+    background-position: 0 0;
+    opacity: 0.3;
+}
+
+.list-vkontakte:hover
+{
+    background-position: 0 -24px;
+    opacity: 1;
+}
+
+
+.list-networks
+{
+    display: inline-block;
+    background-image: url('../img/networks.png');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin: 0 3px 0 0;
+}
+
+.social-count .link
+{
+    text-decoration: none;
+    color: #999;
+}
+
+
+.list-google
+{
+    background-position: -96px 0;
+    opacity: 0.3;
+}
+
+.list-google:hover
+{
+    background-position: -96px -24px;
+    opacity: 1;
+}
+
+.list-mail
+{
+    background-position: -72px 0;
+    opacity: 0.3;
+}
+
+.list-mail:hover
+{
+    background-position: -72px -24px;
+    opacity: 1;
+}
+
+.list-classmate
+{
+    background-position: -120px 0;
+    opacity: 0.3;
+}
+
+.list-classmate:hover
+{
+    background-position: -120px -24px;
+    opacity: 1;
+}
+
+.show
+{
+    display: inline-block;
+}
+
+.networks
+{
+    text-align: center;
+}
+
+
+.house-footer
+{
+    background: #dde8ff;
+    padding: 10px 20px;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    border-color: #000 #c9d2e5 #c9d2e5;
+}
+
+.house-footer .button
+{
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+    line-height: 18px;
+    padding: 3px 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.house-footer .button:hover
+{
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+.house-footer .button.enter
+{
+    float: left;
+}
+
+
+.house-footer .button.registration
+{
+    float: right;
+    font-weight: 700;
+}
+
+.main-container.footer
+{
+    box-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+
+.footer-inner
+{
+    width: 840px;
+    margin: 0 auto;
+    padding: 23px 20px 25px 20px;
+}
+
+.footer-inner .block
+{
+    float: right;
+    color: #7f7f7f;
+    padding: 2px 0 0 0;
+}
+
+
+.footer-inner .copyright
+{
+    float: left;
+    cursor: text;
+}
+
+.footer-inner .help
+{
+    float: left;
+    margin: 0 50px 0 0;
+}
+
+
+.footer-inner .link
+{
+    color: #0b2ca9;
+    text-decoration: none;
+}
+
+.footer-inner .link:hover
+{
+    color: #e00;
+}
+
+.footer-inner .icon
+{
+    background-image: url("../img/flag.png");
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 16px;
+    margin: 0 5px 2px 0;
+    display: inline-block;
+}
