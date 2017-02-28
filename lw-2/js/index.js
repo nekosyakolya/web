@@ -53,8 +53,8 @@ function draw()
         shape.setBorderColor(document.getElementById("border").value);
         shape.draw(ctx);
 
-        document.getElementById("area").innerHTML = "Area:" + shape.calculateArea();
-        document.getElementById("perimeter").innerHTML = "Perimeter:" + shape.calculatePerimeter();
+        document.getElementById("area").innerHTML = "Area: " + shape.calculateArea();
+        document.getElementById("perimeter").innerHTML = "Perimeter: " + shape.calculatePerimeter();
     }
 }
 

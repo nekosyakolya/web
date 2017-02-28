@@ -27,22 +27,47 @@
     display: none;
 }
 
-.stroke
-{
-    padding: 30px;
-    float: left;
-}
-
 .main-content
 {
-    background-color: #aeccfc;
+    padding: 30px 30px 106px;
+    background: radial-gradient(circle farthest-corner at 100px 50px, #fbf2eb, #352a3b);
 }
 
 .form
 {
     float: right;
+    text-align: right;
+    padding: 0 150px 10px 50px;
 }
 
 .canvas
-{   background-color: #fff;   
+{  
+    background-color: #fff;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 1px 1px rgba(0,0,0,.1);
+    border-top: 1px solid #8d939e;
+    border-right: 1px solid #a6acba;
+    border-bottom: 1px solid #c1c8d8;
+    border-left: 1px solid #a6acba;
+    float: left;
+}
+
+.list
+{
+    border-radius: 4px;
+    margin: 0 auto 20px;
+    width: 194px;
+}
+
+.input
+{
+    margin: 0 auto 10px;
+    text-align: center;
+    border-radius: 4px;
+    float: right;
+}
+
+
+.value
+{
+    margin: 0 6px 0;
 }
