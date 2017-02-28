@@ -11,7 +11,7 @@ function CTriangle()
     this._calculateSide = function (x1, x2, y1, y2)
     {
         return (Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2)));
-    }
+    };
 }
 
 CTriangle.prototype = Object.create(CShape.prototype);
@@ -25,7 +25,7 @@ CTriangle.prototype.setCoordinates = function(x1, x2, x3, y1, y2, y3)
     this.y1 = y1;
     this.y2 = y2;
     this.y3 = y3;
-}
+};
 
 CTriangle.prototype.draw = function (ctx)
 {

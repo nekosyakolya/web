@@ -13,13 +13,13 @@ CCircle.prototype.setCoordinate = function(x, y)
 {
     this.x = x;
     this.y = y;
-}
+};
 
 
 CCircle.prototype.setRadius = function(radius)
 {
     this.radius = radius;
-}
+};
 
 
 CCircle.prototype.draw = function(ctx)
