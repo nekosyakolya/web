@@ -1,6 +1,7 @@
-module.exports = {
-
-    build: {
-    src: ['.build/dist/']
-  }
+module.exports =
+{
+    build:
+    {
+        src: ['.build/dist/']
+    }
 };

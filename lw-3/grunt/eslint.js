@@ -1,9 +1,8 @@
-module.exports = {
-
+module.exports =
+{
     options: 
     {
-            configFile: 'conf/eslintrc.json'
+        configFile: 'conf/eslintrc.json'
     },
-        validate: ['dist/js/main.js']
-  
+    validate: ['dist/js/main.js']
 };

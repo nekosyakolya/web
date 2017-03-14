@@ -38,5 +38,5 @@ Rectangle.prototype.calculateArea = function()
 
 Rectangle.prototype.calculatePerimeter = function()
 {
-    return ((this.width * 2) + this.height * 2)).toFixed(2);
+    return ((this.width * 2) + (this.height * 2)).toFixed(2);
 };

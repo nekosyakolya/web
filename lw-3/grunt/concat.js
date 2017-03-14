@@ -1,7 +1,8 @@
-module.exports = {
-  dist:
-  {
-    src: ['js/**'],
-    dest: 'dist/js/main.js'
-  }
+module.exports =
+{
+    dist:
+    {
+        src: ['js/**'],
+        dest: 'dist/js/main.js'
+    }
 };
