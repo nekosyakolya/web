@@ -1,6 +1,6 @@
-function CTriangle()
+function Triangle()
 {
-    CShape.apply(this, arguments);
+    Shape.apply(this, arguments);
     this.x1 = 10;
     this.x2 = 80;
     this.x3 = 20;
@@ -14,10 +14,10 @@ function CTriangle()
     };
 }
 
-CTriangle.prototype = Object.create(CShape.prototype);
-CTriangle.prototype.constructor = CTriangle;
+Triangle.prototype = Object.create(Shape.prototype);
+Triangle.prototype.constructor = Triangle;
 
-CTriangle.prototype.setCoordinates = function(x1, x2, x3, y1, y2, y3)
+Triangle.prototype.setCoordinates = function(x1, x2, x3, y1, y2, y3)
 {
     this.x1 = x1;
     this.x2 = x2;
@@ -27,7 +27,7 @@ CTriangle.prototype.setCoordinates = function(x1, x2, x3, y1, y2, y3)
     this.y3 = y3;
 };
 
-CTriangle.prototype.draw = function (ctx)
+Triangle.prototype.draw = function (ctx)
 {
     ctx.beginPath();
     ctx.lineWidth = 5;
@@ -41,7 +41,7 @@ CTriangle.prototype.draw = function (ctx)
     ctx.stroke();
 };
 
-CTriangle.prototype.calculateArea = function ()
+Triangle.prototype.calculateArea = function ()
 {
     var p = this.calculatePerimeter() / 2;
     var a = this._calculateSide(this.x1, this.x2, this.y1, this.y2);
@@ -50,7 +50,7 @@ CTriangle.prototype.calculateArea = function ()
     return (Math.sqrt(p * (p - a) * (p - b) * (p - c))).toFixed(2);
 };
 
-CTriangle.prototype.calculatePerimeter = function ()
+Triangle.prototype.calculatePerimeter = function ()
 {
     var a = this._calculateSide(this.x1, this.x2, this.y1, this.y2);
     var b = this._calculateSide(this.x2, this.x3, this.y2, this.y3);

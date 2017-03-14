@@ -1,28 +1,28 @@
-function CCircle()
+function Circle()
 {
-    CShape.apply(this, arguments);
+    Shape.apply(this, arguments);
     this.radius = 30;
     this.x = 50;
     this.y = 50;
 }
 
-CCircle.prototype = Object.create(CShape.prototype);
-CCircle.prototype.constructor = CCircle;
+Circle.prototype = Object.create(Shape.prototype);
+Circle.prototype.constructor = Circle;
 
-CCircle.prototype.setCoordinate = function(x, y)
+Circle.prototype.setCoordinate = function(x, y)
 {
     this.x = x;
     this.y = y;
 };
 
 
-CCircle.prototype.setRadius = function(radius)
+Circle.prototype.setRadius = function(radius)
 {
     this.radius = radius;
 };
 
 
-CCircle.prototype.draw = function(ctx)
+Circle.prototype.draw = function(ctx)
 {
     ctx.fillStyle = this.getFillColor();
     ctx.beginPath();
@@ -33,12 +33,12 @@ CCircle.prototype.draw = function(ctx)
     ctx.stroke();
 };
 
-CCircle.prototype.calculateArea = function()
+Circle.prototype.calculateArea = function()
 {
     return (Math.PI * Math.pow(this.radius, 2)).toFixed(2);
 };
 
-CCircle.prototype.calculatePerimeter = function()
+Circle.prototype.calculatePerimeter = function()
 {
     return (2 * Math.PI * this.radius).toFixed(2);
 };

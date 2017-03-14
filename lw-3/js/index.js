@@ -8,7 +8,7 @@ function getShape()
         document.getElementById("rectangleBlock").className = "hidden";
         document.getElementById("circleBlock").className = "hidden";
 
-        currentShape = new CTriangle();
+        currentShape = new Triangle();
         currentShape.setCoordinates(Number(document.getElementById("triangleX1").value),
            Number(document.getElementById("triangleX2").value), Number(document.getElementById("triangleX3").value),
            Number(document.getElementById("triangleY1").value), Number(document.getElementById("triangleY2").value),
@@ -20,7 +20,7 @@ function getShape()
         document.getElementById("triangleBlock").className = "hidden";
         document.getElementById("circleBlock").className = "hidden";
 
-        currentShape = new CRectangle();
+        currentShape = new Rectangle();
         currentShape.setCoordinates(Number(document.getElementById("rectangleX1").value),
            Number(document.getElementById("rectangleX2").value), Number(document.getElementById("rectangleY1").value),
            Number(document.getElementById("rectangleY2").value));
@@ -31,7 +31,7 @@ function getShape()
         document.getElementById("rectangleBlock").className = "hidden";
         document.getElementById("triangleBlock").className = "hidden";
 
-        currentShape = new CCircle();
+        currentShape = new Circle();
         currentShape.setRadius(Number(document.getElementById("radius").value));
         currentShape.setCoordinate(Number(document.getElementById("circleX").value), Number(document.getElementById("circleY").value));
     }

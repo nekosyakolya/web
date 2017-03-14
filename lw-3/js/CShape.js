@@ -1,37 +1,37 @@
-function CShape()
+function Shape()
 {
     this.fillColor = "#40f7f7";
     this.borderColor = "#0982f6";
 }
 
-CShape.prototype.setFillColor = function (value)
+Shape.prototype.setFillColor = function (value)
 {
     this.fillColor = value;
 };
 
-CShape.prototype.setBorderColor = function (value)
+Shape.prototype.setBorderColor = function (value)
 {
     this.borderColor = value;
 };
 
-CShape.prototype.getFillColor = function ()
+Shape.prototype.getFillColor = function ()
 {
     return this.fillColor;
 };
 
-CShape.prototype.getBorderColor = function ()
+Shape.prototype.getBorderColor = function ()
 {
     return this.borderColor;
 };
 
-CShape.prototype.draw = function(ctx)
+Shape.prototype.draw = function(ctx)
 {
 };
 
-CShape.prototype.calculateArea = function()
+Shape.prototype.calculateArea = function()
 {
 };
 
-CShape.prototype.calculatePerimeter = function()
+Shape.prototype.calculatePerimeter = function()
 {
 };
