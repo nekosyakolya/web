@@ -18,7 +18,7 @@
     "grunt-contrib-uglify": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-eslint": "^19.0.0",
-    "grunt-file-hash": "^0.1.6",
+    "grunt-hashres": "^0.4.1",
     "load-grunt-config": "^0.19.2",
     "time-grunt": "^1.4.0"
   },

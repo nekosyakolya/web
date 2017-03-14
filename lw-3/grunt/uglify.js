@@ -4,7 +4,7 @@ module.exports =
     {
         files:
         {
-            'dist/js/main.min.js': ['dist/js/main.js']
+            '.build/dist/js/main.min.js': ['dist/js/main.js']
         }
     }
 };

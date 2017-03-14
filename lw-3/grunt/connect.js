@@ -6,7 +6,7 @@ module.exports =
         {
             hostname: 'localhost',
             port: 8080,
-            base: '',
+            base: '.build/',
             livereload: true,
             open:
             {

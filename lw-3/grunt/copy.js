@@ -4,7 +4,7 @@ module.exports =
     {
         files: [{ expand: true,
                   cwd: '',
-                  src: ['index.html'],
+                  src: ['index.html', 'css/bootstrap.min.css'],
                   dest: '.build/'
                 }]
     }
