@@ -3,86 +3,89 @@
   <head>
     <meta charset="utf-8" />
     <title>canvas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="dist/css/main.min.css" />
   </head>
   <body>
     <div class="main-content clearfix">
       <canvas height="500" width="800" id="canvas" class="canvas"></canvas>
+      <div class="block-info">
+          <div id="area">Area: </div>
+          <div id="perimeter">Perimeter: </div>
+      </div>
       <form action="#" id="form" class="form">
-        <select id="shape" name="list" class="list">
-          <option value="Circle">Circle</option>
-          <option value="Triangle">Triangle</option>
-          <option value="Rectangle">Rectangle</option>
-        </select>
-        <div class="clearfix">
-          <label class="value">Fill: </label>
-          <input type="text" value="#fbf2eb" id="fill" class="input" />
+        <div class="form-group">
+          <select id="shape" class="form-control" name="list">
+            <option value="Circle">Circle</option>
+            <option value="Triangle">Triangle</option>
+            <option value="Rectangle">Rectangle</option>
+          </select>
         </div>
-        <div class="clearfix">
-          <label class="value">Border: </label>
-          <input type="text" value="#352a3b" id="border" class="input" />
+        <div class="form-group">
+          <label for="fill" class="value">Fill: </label>
+          <input type="text" value="#f1f8fe" id="fill" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="border" class="value">Border: </label>
+          <input type="text" value="#00223d" id="border" class="form-control" />
         </div>
         <div class="open" id="circleBlock">
-          <div class="clearfix">
-            <label class="value">Radius: </label>
-            <input type="text" value="20" id="radius" class="input" />
+          <div class="form-group">
+            <label for="radius" class="value" >Radius: </label>
+            <input type="text" value="20" id="radius" class="form-control" />
           </div>
-          <div class="clearfix">
-            <label class="value">X: </label>
-            <input type="text" value="50" id="circleX" class="input" />
+          <div class="form-group">
+            <label for="circleX" class="value">X: </label>
+            <input type="text" value="50" id="circleX" class="form-control" />
           </div>
-          <div class="clearfix">
-            <label class="value">Y: </label>
-            <input type="text" value="50" id="circleY" class="input" />
+          <div class="form-group">
+            <label for="circleY" class="value">Y: </label>
+            <input type="text" value="50" id="circleY" class="form-control" />
           </div>
         </div>
         <div class="hidden" id="triangleBlock">
-          <div class="clearfix">
-            <label class="value">X1: </label>
-            <input type="text" value="10" id="triangleX1" class="input" />
+          <div class="form-group">
+            <label for="triangleX1" class="value">X1: </label>
+            <input type="text" value="10" id="triangleX1" class="form-control" />
           </div>
-          <div class="clearfix">
-            <label class="value">Y1: </label>
-            <input type="text" value="10" id="triangleY1" class="input" />
+          <div class="form-group">
+            <label for="triangleY1" class="value">Y1: </label>
+            <input type="text" value="10" id="triangleY1" class="form-control" />
           </div>
-          <div class="clearfix">
-            <label class="value">X2: </label>
-            <input type="text" value="80" id="triangleX2" class="input" />
+          <div class="form-group">
+            <label for="triangleX2" class="value">X2: </label>
+            <input type="text" value="80" id="triangleX2" class="form-control" />
           </div>
-          <div class="clearfix">
-            <label class="value">Y2: </label>
-            <input type="text" value="90" id="triangleY2" class="input" />
+          <div class="form-group">
+            <label for="triangleY2" class="value">Y2: </label>
+            <input type="text" value="90" id="triangleY2" class="form-control" />
           </div>
-          <div class="clearfix">
-            <label class="value">X3: </label>
-            <input type="text" value="20" id="triangleX3" class="input" />
+          <div class="form-group">
+            <label for="triangleX3" class="value">X3: </label>
+            <input type="text" value="20" id="triangleX3" class="form-control" />
           </div>
-          <div class="clearfix">
-            <label class="value">Y3: </label>
-            <input type="text" value="80" id="triangleY3" class="input" />
+          <div class="form-group">
+            <label for="triangleY3" class="value">Y3: </label>
+            <input type="text" value="80" id="triangleY3" class="form-control" />
           </div>
         </div>
         <div class="hidden" id="rectangleBlock">
-          <div class="clearfix">
-            <label class="value">X1: </label>
-            <input type="text" value="10" id="rectangleX1" class="input" />
+          <div class="form-group">
+            <label for="rectangleX1" class="value">X1: </label>
+            <input type="text" value="10" id="rectangleX1" class="form-control" />
           </div>
-          <div class="clearfix">
-            <label class="value">Y1: </label>
-            <input type="text" value="10" id="rectangleY1" class="input" />
+          <div class="form-group">
+            <label for="rectangleY1" class="value">Y1: </label>
+            <input type="text" value="10" id="rectangleY1" class="form-control" />
           </div>
-          <div class="clearfix">
-            <label class="value">X2: </label>
-            <input type="text" value="100" id="rectangleX2" class="input" />
+          <div class="form-group">
+            <label for="rectangleX2" class="value">X2: </label>
+            <input type="text" value="100" id="rectangleX2" class="form-control" />
           </div>
-          <div class="clearfix">
-            <label class="value">Y2: </label>
-            <input type="text" value="100" id="rectangleY2" class="input" />
+          <div class="form-group">
+            <label for="rectangleY2" class="value">Y2: </label>
+            <input type="text" value="100" id="rectangleY2" class="form-control" />
           </div>
-        </div>
-        <div>
-          <div id="area">Area: </div>
-          <div id="perimeter">Perimeter: </div>
         </div>
       </form>
     </div>
