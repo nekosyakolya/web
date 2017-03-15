@@ -7,6 +7,6 @@ module.exports =
     scripts:
     {
         files: ['index.html', 'js/**', 'css/index.css'], 
-        tasks: ['concat', 'uglify', 'cssmin', 'hashres:prod', 'copy:main']
+        tasks: ['concat', 'eslint', 'uglify', 'cssmin', 'hashres:prod', 'copy:main']
     }
 };
