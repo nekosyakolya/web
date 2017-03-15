@@ -24,7 +24,7 @@ Shape.prototype.getBorderColor = function ()
     return this.borderColor;
 };
 
-Shape.prototype.draw = function(ctx)
+Shape.prototype.draw = function()
 {
 };
 
